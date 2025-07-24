@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Master's Coursework & Projects</title>
+
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1c1c1c;
+      color: white;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 12px;
+    }
+    section {
+      margin-bottom: 4rem;
+      background: url('../../images/banner.jpg') no-repeat center center fixed;
+      background-size: cover;
+      padding: 4rem 2rem;
+      border-radius: 12px;
+      box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.6); /* dark overlay for readability */
+    }
+    header.major h2,
+    header.major p {
+      color: white;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    /* Coursework grid */
+    .features-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .feature-box {
+      flex: 1 1 300px;
+      background: rgba(115, 140, 165, 0.9);
+      padding: 1rem;
+      border-radius: 8px;
+      color: white;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.3;
+      user-select: none;
+    }
+
+    /* Skillsets */
+    #skills .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    #skills article {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1.5rem;
+      border-radius: 12px;
+      color: white;
+      flex: 1 1 300px;
+      max-width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    #skills article:hover {
+      transform: translateY(-5px);
+    }
+    #skills .icon {
+      font-size: 2.5rem;
+      color: #c0d3d1;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    #skills h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+    #skills p {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    /* Projects */
+    #projects .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    #projects article {
+      background: rgba(255, 255, 255, 0.07);
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+      color: white;
+    }
+    #projects article:hover {
+      transform: translateY(-8px);
+    }
+    #projects .icon {
+      font-size: 2.5rem;
+      color: #d1e2df;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    #projects h3 {
+      color: antiquewhite;
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+    }
+    #projects ul {
+      padding-left: 1.2rem;
+      margin: 0;
+    }
+    #projects li {
+      color: darkgray;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+      line-height: 1.3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Master's Coursework Section -->
+  <section id="masters-coursework" class="container">
+    <header class="major">
+      <h2>Master's Coursework</h2>
+      <p>Here are the subjects I studied during my Master's in Artificial Intelligence</p>
+    </header>
+
+    <div class="features-grid">
+      <div class="feature-box">• Feature Engineering</div>
+      <div class="feature-box">• Empirical Analysis</div>
+      <div class="feature-box">• Fundamentals of Artificial Intelligence</div>
+      <div class="feature-box">• Software Development for AI</div>
+      <div class="feature-box">• Machine Learning</div>
+      <div class="feature-box">• Deep Learning</div>
+      <div class="feature-box">• Natural Language Processing</div>
+      <div class="feature-box">• Big Data and Data Science</div>
+      <div class="feature-box">• Web Search & Information Retrieval</div>
+      <div class="feature-box">• Scientific Data Visualisation</div>
+      <div class="feature-box">• AI for Wearables</div>
+    </div>
+  </section>
+
+  <!-- Skillsets Section -->
+  <section id="skills" class="container">
+    <header class="major">
+      <h2>Skillsets Gained</h2>
+      <p>Here are some of the core technical skills I developed during my Master’s in Artificial Intelligence</p>
+    </header>
+
+    <div class="features">
+      <article>
+        <span class="icon solid fa-code"></span>
+        <div class="content">
+          <h3>Programming</h3>
+          <p>Python, R, SQL, JavaScript</p>
+        </div>
+      </article>
+
+      <article>
+        <span class="icon solid fa-brain"></span>
+        <div class="content">
+          <h3>AI</h3>
+          <p>Scikit-learn, LLMS, TensorFlow, PyTorch, Machine Learning Algorithms, NLP, Deep Learning Neural Networks</p>
+        </div>
+      </article>
+
+      <article>
+        <span class="icon solid fa-database"></span>
+        <div class="content">
+          <h3>Data Handling</h3>
+          <p>Pandas, NumPy, PowerBI, Tableau, SQL</p>
+        </div>
+      </article>
+
+      <article>
+        <span class="icon solid fa-tools"></span>
+        <div class="content">
+          <h3>Software Tools</h3>
+          <p>Git, Jupyter, VS Code, Docker, Azure ML</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container">
+    <header class="major">
+      <h2>Projects</h2>
+      <p>Here are some impactful projects I worked on during my Master’s in Artificial Intelligence</p>
+    </header>
+
+    <div class="features">
+      <article>
+        <span class="icon solid fa-hands"></span>
+        <div class="content">
+          <h3>SIGN LANGUAGE RECOGNITION USING CONTINUAL LEARNING</h3>
+          <ul>
+            <li>Built a CNN-based sign language classifier using the Sign Language MNIST dataset.</li>
+            <li>Implemented Elastic Weight Consolidation (EWC) to enable sequential learning without forgetting.</li>
+            <li>Improved accuracy and retention while training on letter groups (A-G, H-M, N-Y).</li>
+          </ul>
+        </div>
+      </article>
+
+      <article>
+        <span class="icon solid fa-video"></span>
+        <div class="content">
+          <h3>VIDEO CLASSIFICATION WITH CNNS AND HISTOGRAM MODELS</h3>
+          <ul>
+            <li>Developed classifiers (S3D, ResNet, Conv3D) to classify video data with temporal-spatial features.</li>
+            <li>Improved S3D model accuracy to 60% on real-time datasets through fine-tuning.</li>
+            <li>Evaluated models using confusion matrix and performance metrics (precision, recall, F1-score).</li>
+          </ul>
+        </div>
+      </article>
+
+      <article>
+        <span class="icon solid fa-robot"></span>
+        <div class="content">
+          <h3>AI BOT WITH NANO GPT</h3>
+          <ul>
+            <li>Built an AI bot using NanoGPT to help AI students understand concepts clearly.</li>
+            <li>Fine-tuned on curated course materials, research papers, and FAQs for domain-specific answers.</li>
+            <li>Generated context-aware responses with transformer-based generation.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article>
+        <span class="icon solid fa-pencil-ruler"></span>
+        <div class="content">
+          <h3>HAND GESTURE-BASED VIRTUAL DRAWING AND TYPING SYSTEM</h3>
+          <ul>
+            <li>Created a system to draw/type using hand gestures with fingertip tracking (MediaPipe).</li>
+            <li>Implemented dynamic color selection and gesture-controlled keyboard.</li>
+            <li>Enhanced UI with CV Zone and OpenCV for real-time responsiveness.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article>
+        <span class="icon solid fa-question"></span>
+        <div class="content">
+          <h3>LLM-POWERED SMART Q-A SYSTEM</h3>
+          <ul>
+            <li>Fine-tuned DistilBERT on SQuAD for contextual question answering.</li>
+            <li>Integrated GPT-based models for dynamic, intelligent response generation.</li>
+            <li>Used BLEU and ROUGE for LLM performance evaluation and RAG pipeline development.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- Campus Research Work Section -->
+  <section id="campus-research" class="container" style="background: url('../../images/banner.jpg') no-repeat center center fixed; background-size: cover; padding: 4rem 2rem; margin-top: 3rem;">
+    <header class="major">
+      <h2 style="color: white;">Campus Research Work</h2>
+      <p style="color: white;">My research and project contributions as a campus student</p>
+    </header>
+  
+    <div style="display: flex; gap: 1.5rem; margin-top: 2rem; justify-content: center; flex-wrap: wrap;">
+      <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 12px; color: white; flex: 1 1 300px; min-width: 280px;">
+        <p>Experimented with Python tools for efficient PDF manipulation for the Form AI project.</p>
+        <p>Built a document summarizer leveraging transformer-based LLMs (GPT-3, BERT) to condense large texts.</p>
+        <p>Developed Unity 3D virtual reality simulation displaying exit directions for emergency preparedness.</p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+</body>
+</html>

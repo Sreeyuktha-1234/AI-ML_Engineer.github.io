@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Experience Section</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body style="margin: 0; background-color: #000; color: #fff; font-family: 'Segoe UI', sans-serif;">
+
+  <div style="text-align: center; padding: 40px 20px;">
+    <h1 style="color: #fff; font-size: 2.5rem;">💼 My Experience</h1>
+    <p style="color: #ccc;">Tap any box to view full details</p>
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 20px;">
+
+    <!-- AI/ML Engineer -->
+    <div onclick="toggleDetails('exp1')" style="background: #1a1a1a; border-radius: 12px; width: 100%; max-width: 500px; cursor: pointer; box-shadow: 0 0 15px rgba(255,255,255,0.08); padding: 20px; transition: all 0.3s ease;">
+      <h3 style="color: #00ced1; margin-bottom: 5px;">AI/ML Engineer</h3>
+      <p style="color: #aaa; font-size: 0.9rem;">Dec 2023 – Present</p>
+      <div id="exp1" style="display: none; margin-top: 15px; color: #ddd; font-size: 0.95rem; line-height: 1.6;">
+        <ul style="list-style-type: disc; padding-left: 20px;">
+          <li>Extracted, processed, and integrated large-scale healthcare data—including EHR, lab results, and clinical notes—using Python, SQL, MongoDB, and PySpark.</li>
+          <li>Developed and optimized predictive models using Scikit-learn, XGBoost, LightGBM, TensorFlow, and PyTorch; incorporated medical imaging with OpenCV and tuned performance with grid search.</li>
+          <li>Built interactive EDA dashboards in Tableau and Matplotlib, enabling actionable clinical insights for stakeholders.</li>
+          <li>Deployed HIPAA-compliant AI models via Docker and Kubernetes on AWS SageMaker and Azure ML, using MLflow and CI/CD pipelines for lifecycle management.</li>
+          <li>Created scalable ETL and ML workflows in Databricks using PySpark and Delta Lake, powering real-time decision support with recommendation systems and LangChain agents.</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- Software Engineer -->
+    <div onclick="toggleDetails('exp3')" style="background: #1a1a1a; border-radius: 12px; width: 100%; max-width: 500px; cursor: pointer; box-shadow: 0 0 15px rgba(255,255,255,0.08); padding: 20px; transition: all 0.3s ease;">
+      <h3 style="color: #00ced1;">Software Engineer – Patient Care Link</h3>
+      <p style="color: #aaa;">Aug 2023 – Dec 2023</p>
+      <div id="exp3" style="display: none; margin-top: 15px; color: #ddd; font-size: 0.95rem; line-height: 1.6;">
+        <ul style="list-style-type: disc; padding-left: 20px;">
+          <li>Worked on the Patient Care Link real-time website <a href="https://pcarelink.com" style="color: #00ced1;" target="_blank">pcarelink.com</a>, using JavaScript in Postman to evaluate API security and performance.</li>
+          <li>Developed and optimized backend functionality by creating efficient GET and POST APIs to enhance data flow and system responsiveness.</li>
+          <li>Collaborated on front-end enhancements, refining the user interface and experience based on usability feedback.</li>
+          <li>Contributed to securing and testing APIs, ensuring robust and reliable web application performance through manual and automated validation.</li>
+          <li>Integrated API endpoints with SQL and PostgreSQL for dynamic content delivery and seamless front-end-backend communication.</li>
+          <li>Worked in Agile sprints, collaborating closely with UI/UX designers and QA teams to deploy high-quality code.</li>
+          <li>Implemented CI/CD pipelines using GitHub Actions to automate testing and deployment workflows.</li>
+          <li>Executed unit and integration tests using Postman to validate API behavior and ensure robust error handling.</li>
+          <li>Enhanced debugging and system logging processes using browser dev tools and server logs to improve reliability and traceability.</li>
+          <li>Maintained API documentation and workflows using Confluence to support cross-team visibility and onboarding.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Research Student -->
+    <div onclick="toggleDetails('exp2')" style="background: #1a1a1a; border-radius: 12px; width: 100%; max-width: 500px; cursor: pointer; box-shadow: 0 0 15px rgba(255,255,255,0.08); padding: 20px; transition: all 0.3s ease;">
+      <h3 style="color: #00ced1;">Research Student – University of North Texas</h3>
+      <p style="color: #aaa;">Aug 2023 – Dec 2023</p>
+      <div id="exp2" style="display: none; margin-top: 15px; color: #ccc; font-size: 0.95rem;">
+        <ul style="list-style-type: disc; padding-left: 20px;">
+          <li>Conducted experiments on pose estimation using MediaPipe and OpenPose.</li>
+          <li>Implemented continual learning frameworks to adapt gesture recognition models to new data with minimal forgetting.</li>
+          <li>Experimented with Python tools for efficient PDF manipulation for the Form AI project</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleDetails(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'none' ? 'block' : 'none';
+    }
+  </script>
+
+</body>
+</html>
