@@ -2,73 +2,173 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Experience Section</title>
+  <title>Portfolio - AI/ML Engineer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body style="margin: 0; background-color: #000; color: #fff; font-family: 'Segoe UI', sans-serif;">
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-  <div style="text-align: center; padding: 40px 20px;">
-    <h1 style="color: #fff; font-size: 2.5rem;">💼 My Experience</h1>
-    <p style="color: #ccc;">Tap any box to view full details</p>
+    /* Hero / About Me */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: #000;
+    }
+
+    .hero h1 {
+      color: #00ced1;
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #f0f0f0;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Experience Section */
+    .experience {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .experience h1 {
+      color: #fff;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .experience p {
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .exp-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .exp-card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 500px;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(255,255,255,0.08);
+      padding: 25px;
+      transition: all 0.3s ease;
+      border: 1px solid #222;
+      position: relative;
+    }
+
+    .exp-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(0, 206, 209, 0.3);
+    }
+
+    .exp-card h3 {
+      color: #00ced1;
+      margin-bottom: 5px;
+    }
+
+    .exp-card p.date {
+      color: #aaa;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .exp-card ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #ddd;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2.2rem; }
+      .experience h1 { font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero / About Me -->
+  <div class="hero">
+    <h1>👋 AI/ML Engineer Building Intelligent, Scalable Systems with Machine Learning & LLMs</h1>
+    <p>
+      I am an AI/ML Engineer with extensive experience designing and deploying intelligent, scalable, and production-ready AI systems. I specialize in machine learning, deep learning, NLP, computer vision, and large language models (LLMs), and am proficient in Python, PySpark, SQL, as well as cloud platforms like AWS, GCP, and Azure. I have hands-on expertise with leading tools such as Dataiku, Databricks, HuggingFace Transformers, LangChain and LlamaIndex.... to build and manage end-to-end ML pipelines, workflow automation, and large-scale data processing. I am passionate about delivering solutions that are efficient, reliable, and impactful, combining strong engineering practices with cutting-edge AI and LLM technologies to solve complex, real-world problems.
+    </p>
   </div>
 
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; padding: 20px;">
+  <!-- Experience Section -->
+  <div class="experience">
+    <h1>💼 My Experience</h1>
+    <p>Tap any box to view full details</p>
 
-    <!-- AI/ML Engineer -->
-    <div onclick="toggleDetails('exp1')" style="background: #1a1a1a; border-radius: 12px; width: 100%; max-width: 500px; cursor: pointer; box-shadow: 0 0 15px rgba(255,255,255,0.08); padding: 20px; transition: all 0.3s ease;">
-      <h3 style="color: #00ced1; margin-bottom: 5px;">AI/ML Engineer</h3>
-      <p style="color: #aaa; font-size: 0.9rem;">March 2025 – Present</p>
-      <div id="exp1" style="display: none; margin-top: 15px; color: #ddd; font-size: 0.95rem; line-height: 1.6;">
-        <ul style="list-style-type: disc; padding-left: 20px;">
-          <li>Built a personalized healthcare assistant using LLMs, RAG pipelines, and multi-agent systems for tailored patient insights and recommendations.</li>
-          <li>Unified diverse healthcare datasets (EHR, labs, clinical notes, insurance plans) via PySpark, SQL, and GCP Dataproc workflows.</li>
-          <li>Designed document-chunking, embedding generation, and semantic retrieval systems using Vertex AI, Sentence Transformers, and LangChain.</li>
-          <li>Fine-tuned domain-specific LLMs (BioBERT, ClinicalBERT, Clinical-LLaMA, GPT-3.5) using SFT with clinician-annotated instruction datasets.</li>
-          <li>Implemented few-shot/instruction prompting and multi-agent orchestration (retriever, summarizer, planner, recommender) with LangChain, AutoGen, and Semantic Kernel.</li>
-          <li>Deployed LLM microservices using FastAPI, Docker, and Cloud Run with automated CI/CD pipelines on Azure and Jenkins.</li>
-          <li>Developed automated testing (pytest) and explainability dashboards (Tableau, Plotly Dash) to validate model performance and support clinician review.</li>
-          <li>Created an evaluation framework using healthcare-specific metrics and collaborated closely with clinicians to ensure accuracy, interpretability, and production readiness.</li>
-        </ul>
+    <div class="exp-container">
+
+      <!-- AI/ML Engineer -->
+      <div class="exp-card" onclick="toggleDetails('exp1')">
+        <h3><i class="fas fa-robot" style="margin-right:6px;"></i>AI/ML Engineer</h3>
+        <p class="date">March 2025 – Present</p>
+        <div id="exp1" style="display: none;">
+          <ul>
+            <li>Built a personalized healthcare assistant using LLMs, RAG pipelines, and multi-agent systems.</li>
+            <li>Unified diverse healthcare datasets via PySpark, SQL, and GCP Dataproc workflows.</li>
+            <li>Fine-tuned domain-specific LLMs (BioBERT, ClinicalBERT, GPT-3.5) with clinician-annotated data.</li>
+            <li>Deployed LLM microservices using FastAPI, Docker, and Cloud Run with CI/CD pipelines.</li>
+            <li>Developed dashboards in Tableau and Plotly Dash for explainability and model validation.</li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <!-- Data Scientist -->
-    <div onclick="toggleDetails('exp4')" style="background: #1a1a1a; border-radius: 12px; width: 100%; max-width: 500px; cursor: pointer; box-shadow: 0 0 15px rgba(255,255,255,0.08); padding: 20px; transition: all 0.3s ease;">
-      <h3 style="color: #00ced1;">Data Scientist</h3>
-      <p style="color: #aaa;">Jun 2021 – Jul 2023</p>
-      <div id="exp4" style="display: none; margin-top: 15px; color: #ddd; font-size: 0.95rem; line-height: 1.6;">
-        <ul style="list-style-type: disc; padding-left: 20px;">
-          <li>Engineered and processed structured and unstructured data from various sources using SQL, PySpark, and Databricks, ensuring data quality and consistency.</li>
-          <li>Developed machine learning models using Scikit-learn, XGBoost, and TensorFlow, incorporating hyperparameter tuning, cross-validation, and feature engineering to optimize performance.</li>
-          <li>Built and deployed scalable ML workflows on Azure (HDInsight, ML Studio) and AWS (S3, Lambda) with Docker, Kubernetes, and MLflow integration.</li>
-          <li>Performed exploratory data analysis and created dynamic Power BI dashboards to visualize clustering results, pricing strategies, and customer insights.</li>
-          <li>Integrated Flask-based RESTful APIs and automated system monitoring using shell scripts in Linux environments for seamless model integration and uptime.</li>
-          <li>Collaborated with cross-functional teams to align data science solutions with business goals, translating model outputs into actionable strategies for marketing and pricing.</li>
-        </ul>
+      <!-- Data Scientist -->
+      <div class="exp-card" onclick="toggleDetails('exp2')">
+        <h3><i class="fas fa-chart-line" style="margin-right:6px;"></i>Data Scientist</h3>
+        <p class="date">Jun 2021 – Jul 2023</p>
+        <div id="exp2" style="display: none;">
+          <ul>
+            <li>Engineered and processed structured and unstructured data using SQL, PySpark, and Databricks.</li>
+            <li>Developed ML models with Scikit-learn, XGBoost, and TensorFlow using feature engineering and hyperparameter tuning.</li>
+            <li>Built and deployed ML workflows on Azure and AWS with Docker, Kubernetes, and MLflow.</li>
+            <li>Created dynamic Power BI dashboards to visualize customer insights and model performance.</li>
+            <li>Collaborated with cross-functional teams to translate ML outputs into business strategies.</li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    
-
-    <!-- Research Student -->
-    <div onclick="toggleDetails('exp2')" style="background: #1a1a1a; border-radius: 12px; width: 100%; max-width: 500px; cursor: pointer; box-shadow: 0 0 15px rgba(255,255,255,0.08); padding: 20px; transition: all 0.3s ease;">
-      <h3 style="color: #00ced1;">Research Student – University of North Texas</h3>
-      <p style="color: #aaa;">Aug 2023 – Dec 2024</p>
-      <div id="exp2" style="display: none; margin-top: 15px; color: #ccc; font-size: 0.95rem;">
-        <ul style="list-style-type: disc; padding-left: 20px;">
-          <li>Unified structured and unstructured data from APIs, databases, logs, and streaming sources, storing and managing it securely in S3 and ADLS.</li>
-          <li>Performed large-scale data preparation, feature engineering, and validation using Dataiku, Databricks (PySpark), and Great Expectations.</li>
-          <li>Built, tuned, and tracked ML models using Scikit-learn, TensorFlow, XGBoost, SageMaker, Azure ML, and MLflow across multi-cloud environments.</li>
-          <li>Automated end-to-end data and ML pipelines with Airflow, Step Functions, and Azure Data Factory, including scheduled retraining workflows.</li>
-          <li>Deployed models via real-time and batch inference using SageMaker Endpoints, Azure ML Endpoints, serverless functions, and containerized microservices on ECS/Fargate and AKS.</li>
-          <li>Monitored production models for accuracy, latency, and drift using SageMaker Model Monitor, Azure Monitor, and custom dashboards.</li>
-          <li>Built analytics and KPI dashboards in Dataiku, Power BI, and Tableau, enabling self-service insights for business stakeholders.</li>
-          <li>Implemented strong security, governance, and compliance controls using IAM, RBAC, KMS, Key Vault, Unity Catalog, and Azure Purview.</li>
-          <li>Collaborated using SageMaker Studio, Azure ML Studio, and Databricks Workspaces, documenting architectures and workflows in Confluence.</li>
-        </ul>
+      <!-- Research Student -->
+      <div class="exp-card" onclick="toggleDetails('exp3')">
+        <h3><i class="fas fa-flask" style="margin-right:6px;"></i>Research Student – University of North Texas</h3>
+        <p class="date">Aug 2023 – Dec 2024</p>
+        <div id="exp3" style="display: none;">
+          <ul>
+            <li>Built an LLM-powered system to extract key information from existing documents and populate new digital forms with high accuracy.</li>
+            <li>Designed context-aware prompt strategies to handle diverse form structures and user inputs.</li>
+            <li>Developed a robust pipeline for unstructured and semi-structured data, ensuring consistent extraction of names, dates, and identifiers.</li>
+            <li>Implemented validation and confidence-scoring mechanisms to maintain high data quality.</li>
+            <li>Leveraged Python libraries (PyPDF2, PDFPlumber, PyMuPDF) for PDF preprocessing and text extraction.</li>
+            <li>Developed an immersive Unity 3D virtual reality (VR) simulation to visualize emergency exit routes in real time for enhanced safety training.</li>
+            <li>Integrated realistic physics, lighting, navigation meshes, and environment modeling to create an interactive and accurate building-evacuation experience.</li>
+            <li>Programmed custom C# scripts to dynamically render exit paths and guide users with markers, animations, and audio cues.</li>
+            <li>Conducted usability testing with target users to assess clarity of exit instructions, navigation flow, and overall training effectiveness.</li>   
+          </ul>
+        </div>
       </div>
-    </div>
 
+    </div>
   </div>
 
   <script>
